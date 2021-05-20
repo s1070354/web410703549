@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "HW1";
+}
+
+<h5>姓名:@Html.TextBox("name")</h5>
+<h5>帳號:@Html.TextBox("account")</h5>
+<h5>密碼:@Html.Password("password")</h5>
+
+<h5>
+    性別:@Html.RadioButton("gender", "A")男性
+         @Html.RadioButton("gender", "B")女性
+</h5>
+<h5>
+    興趣:
+    @Html.CheckBox("reading", "R")游泳
+    @Html.CheckBox("swimming", "S")閱讀
+    @Html.CheckBox("movie", "M")看電影
+</h5>
+
+<h5>
+    自我介紹:
+    @Html.TextArea("about")<textarea></textarea>
+</h5>
